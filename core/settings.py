@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'website',
+    'accounts',
 ]
 
 SITE_ID = 1
@@ -144,3 +146,8 @@ EMAIL_USE_SSL = config("EMAIL_USE_SSL", cast=bool ,default=False)
 EMAIL_PORT = config("EMAIL_PORT", cast=int,default=25)
 EMAIL_HOST_USER = config("EMAIL_HOST_USER",default="")
 EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD",default="")
+
+# accounts model settings
+AUTH_USER_MODEL = 'accounts.User'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL= '/'
