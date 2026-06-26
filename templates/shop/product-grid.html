@@ -207,7 +207,7 @@
                             </h4>
                             {% if object.is_discounted %}
                             <p class="card-text text-dark fs-4">
-                                <span class="formatted-price">{{object.get_price}}</span>
+                                <span class="formatted-price">{{object. }}</span>
                                 <span
                                     class="text-body me-1 fs-6 formatted-price text-decoration-line-through">{{object.price}}</span>
                             </p>
@@ -313,8 +313,8 @@
                     <!-- Input Card -->
                     <div class="input-card input-card-pill input-card-sm border mb-3">
                         <div class="input-card-form">
-                            <input class="form-control border-0 me-1" type="text" placeholder="نام"
-                                        name="first_name" hidden="">
+                            <input class="form-control border-0 me-1" type="text" placeholder="نام" name="first_name"
+                                hidden="">
                             <label for="subscribeForm" class="form-label visually-hidden">ایمیل را وارد کنید</label>
                             <input type="email" class="form-control form-control-lg" name="email"
                                 placeholder="ایمیل خود را وارد نمایید" aria-label="ایمیل خود را وارد کنید">
